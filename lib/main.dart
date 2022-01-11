@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/homepage.dart';
@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       theme: ThemeData(primarySwatch: Colors.amber),
       debugShowCheckedModeBanner: false,
-     initialRoute: "/Home",
+      initialRoute: "/Home",
       routes: {
-        "/":(context)=>LOGINPAGE(),
-        "/Login" : (context)=>LOGINPAGE(),
-        "/Home" : (context)=>HomePage(),
+        "/": (context) => const LOGINPAGE(),
+        "/Login": (context) => const LOGINPAGE(),
+        "/Home": (context) => const HomePage(),
       },
     );
   }

@@ -5,9 +5,14 @@ class LOGINPAGE extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: Center(
-        child: Text('LOGIN PAGE'),
+    return Material(
+      child: Column(
+        children: [
+          Image.asset(
+            "lib/assets/images/login.png",
+            fit: BoxFit.cover,
+          ),
+        ],
       ),
     );
   }

@@ -11,23 +11,18 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        
         appBar: AppBar(
-          
           title: Text('$Catelog App'),
         ),
         body: Center(
-          child: Column(
-            children: [
-              
-              Text('welcome to $days days of flutter'),
-            ],
-          ),
+          child: Text('welcome to $days days of flutter'),
         ),
         drawer: const Drawer(
-          child: ListTile(leading: Icon(Icons.ac_unit_rounded,),
-          
-          )
+          child: ListTile(
+            leading: Icon(
+              Icons.ac_unit_rounded,
+            ),
+          ),
         ),
       ),
     );
